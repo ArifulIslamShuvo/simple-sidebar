@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="style.css">
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">TECH-iNFINY</div>
+        <!-- toggle menu  -->
+        <span class="menubtn" onclick=openNav()>&#9776;</span>
+        <div  class="navLinks">
+            <ul>
+                <li><a href="#">Airdrop</a></li>
+                <li><a href="#">Initial offering(IDo)</a></li>
+                <li><a href="#">Mining</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Notification</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- responsive side bar -->
+    <div class="sideNav" id="sidenav">
+        <a href="#" class="clouseBtn" onclick=closeNav() >&#10006;</a>
+        <a href="#">Airdrop</a>
+        <a href="#">Initial offering(IDo)</a>
+        <a href="#">Mining</a>
+        <a href="#">Profile</a>
+        <a href="#">Notification</a>
+    </div>
+    <!-- javaScript to make side menu appear -->
+    <script>
+        function openNav(){
+            document.getElementById("sidenav").style.width="50%";
+        }
+        function closeNav(){
+            document.getElementById("sidenav").style.width="0%";
+        }
+    </script>
+</body>
+</html>
